@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Govind Kumar - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Govind Kumar</div>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <img src="images/image1.JPG" alt="Profile Picture" class="profile-pic">
+    <h1>Hi, I'm <span class="name-highlight">Govind Kumar</span></h1>
+    <h2><span id="typed"></span></h2>
+    <div class="hero-buttons">
+      <a href="resumer.pdf" download>Download Resume</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/feed/?legoTrackingToken=30NfmlWqldVomNMsSBA9z0Kc3RBsCZzkTsCfn9xk6NBkDsCfmhLjmNBkDsCejAVejAZp6lQsSlRsmlirnlK9AVfilh9kQZgfnB2sClAsAZQpmtAqnsCt6VBt6VFnT9BqSlBsRZyrSFvcDpAon1EoSVRomMZp4BQpmtAqnsCc3RKrSBQqndLk7hBpShFtOoMbz0Zpn9LoRdOpOoZsC5gr6lisCsCfmhLjmNBkD9D9z0ZrCZFt6BPrR1MtmZOpOoVejAVejRApnhPpnlNpl9JtkVMtmZOpOpQr7lxpClAfmh9s7lLsCsCjAZ9l4BjjR0Zuk9OpmhOrOpQr7lxpClAfmh9t6VBrmtBsOpQrClQrCAZp4BQrSNP9DhItm5CpmgZp4BQtmZVomMCcDpAon1EoSVRomMZpmRxjClDon0Cq7hTrT9Dfmh9s71x9zkSd38McPRAimVLqndOpnoCejoUcjkPdj4Ufmh9tioVoCpCdmgQp35zc3gJdSpye2RCc6gQbm5ycCkJp3kRp3oVp3sZp4BQu6lQrCZz/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com//" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>I am a passionate web developer with experience in building modern, responsive and user-friendly websites.</p>
+    <ul>
+      <li>Education: Bachelor in Computer Application</li>
+      <li>Hobbies: Coding, Reading, Traveling</li>
+    </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><i class="fab fa-html5"></i> HTML5</div>
+      <div><i class="fab fa-css3-alt"></i> CSS3</div>
+      <div><i class="fab fa-js-square"></i> JavaScript</div>
+      <div><i class="fab fa-react"></i> React</div>
+      <div><i class="fab fa-git-alt"></i> Git</div>
+      
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <img src="project1.png" alt="Project 1">
+        <h3>Portfolio Website</h3>
+        <p>My personal portfolio website built with HTML, CSS and JavaScript.</p>
+        <a href="#" target="_blank">View Live</a>
+      </div>
+  <div class="project-cards">
+ 
+    <div class="project-card">
+      <img src="image1.jpg" alt="Image Slider ">
+      <h3>Image Slider Project</h3>
+      <p>Interactive image slider with next/previous controls implemented using HTML, CSS, and JavaScript.</p>
+      <a href="slider/index.html" target="_blank">View Live</a>
+      <a href="slider.zip" download>Download Source</a>
+    </div>
+  </div>
+</section>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Govind Kumar</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Typed.js Animation
+    var typed = new Typed('#typed', {
+      strings: ["Web Developer.", "Designer."],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+</body>
+</html>
+
